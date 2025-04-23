@@ -13,4 +13,22 @@ class SAr extends S {
 
   @override
   String get an_error_occurred => 'حدث خطأ أثناء تحميل التطبيق';
+
+  @override
+  String get retry => 'إعادة المحاولة';
+
+  @override
+  String get no_books_found => 'لا توجد كتب متاحة';
+
+  @override
+  String get search => 'بحث';
+
+  @override
+  String get search_books => 'ابحث عن كتب';
+
+  @override
+  String get see_more => 'عرض المزيد';
+
+  @override
+  String get see_less => 'عرض أقل';
 }

@@ -13,4 +13,22 @@ class SEn extends S {
 
   @override
   String get an_error_occurred => 'An error occurred while loading the app';
+
+  @override
+  String get retry => 'Retry';
+
+  @override
+  String get no_books_found => 'No books available';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get search_books => 'Search for books';
+
+  @override
+  String get see_more => 'See more';
+
+  @override
+  String get see_less => 'See less';
 }

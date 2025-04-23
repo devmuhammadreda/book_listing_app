@@ -106,6 +106,42 @@ abstract class S {
   /// In en, this message translates to:
   /// **'An error occurred while loading the app'**
   String get an_error_occurred;
+
+  /// No description provided for @retry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get retry;
+
+  /// No description provided for @no_books_found.
+  ///
+  /// In en, this message translates to:
+  /// **'No books available'**
+  String get no_books_found;
+
+  /// No description provided for @search.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get search;
+
+  /// No description provided for @search_books.
+  ///
+  /// In en, this message translates to:
+  /// **'Search for books'**
+  String get search_books;
+
+  /// No description provided for @see_more.
+  ///
+  /// In en, this message translates to:
+  /// **'See more'**
+  String get see_more;
+
+  /// No description provided for @see_less.
+  ///
+  /// In en, this message translates to:
+  /// **'See less'**
+  String get see_less;
 }
 
 class _SDelegate extends LocalizationsDelegate<S> {

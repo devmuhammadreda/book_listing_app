@@ -1,5 +1,3 @@
-import 'dart:developer';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/services/bloc_observer.dart';
@@ -13,9 +11,6 @@ void main() async {
   Bloc.observer = MyBlocObserver();
   await CacheHelper.init();
   await ServiceLocator.init();
-  await HiveService().init();
-  if (kDebugMode) {
-    log(CacheHelper.getUserToken.toString());
-  }
+  await sl<HiveService>().init();
   runApp(MyApp());
 }

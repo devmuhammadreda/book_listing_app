@@ -1,0 +1,1 @@
+/Users/devmuhammadreda/work/book_listing_app/build/app/intermediates/cxx/Debug/2k37h3u4/obj/arm64-v8a

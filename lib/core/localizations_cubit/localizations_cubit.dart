@@ -14,7 +14,6 @@ class LocalizationsCubit extends Cubit<LocalizationsState> {
   Locale get locale => _locale;
 
   Future<void> _initLocale() async {
-    await CacheHelper.init();
     final cachedLangCode = CacheHelper.getLocale;
     _locale = Locale(cachedLangCode);
     emit(ChangeAppLocalizationsState(_locale));

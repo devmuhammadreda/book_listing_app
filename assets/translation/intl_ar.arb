@@ -1,4 +1,10 @@
 {
   "appName": "Book Listing App",
-  "an_error_occurred": "حدث خطأ أثناء تحميل التطبيق"
+  "an_error_occurred": "حدث خطأ أثناء تحميل التطبيق",
+  "retry": "إعادة المحاولة",
+  "no_books_found": "لا توجد كتب متاحة",
+  "search": "بحث",
+  "search_books": "ابحث عن كتب",
+  "see_more": "عرض المزيد",
+  "see_less": "عرض أقل"
 }

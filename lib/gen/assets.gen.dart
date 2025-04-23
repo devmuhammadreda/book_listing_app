@@ -15,12 +15,15 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/empty.svg
+  SvgGenImage get empty => const SvgGenImage('assets/images/empty.svg');
+
   /// File path: assets/images/system_update.svg
   SvgGenImage get systemUpdate =>
       const SvgGenImage('assets/images/system_update.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [systemUpdate];
+  List<SvgGenImage> get values => [empty, systemUpdate];
 }
 
 class $AssetsTranslationGen {

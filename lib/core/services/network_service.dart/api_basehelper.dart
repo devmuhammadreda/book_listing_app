@@ -47,7 +47,6 @@ class ApiBaseHelper {
             receiveTimeout: const Duration(seconds: 10),
             receiveDataWhenStatusError: true,
             validateStatus: (int? status) => true,
-            extra: {'http2': true},
           ),
         ) {
     _dio.interceptors.addAll([

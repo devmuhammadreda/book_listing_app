@@ -1,4 +1,10 @@
 {
   "appName": "Book Listing App",
-  "an_error_occurred": "An error occurred while loading the app"
+  "an_error_occurred": "An error occurred while loading the app",
+  "retry": "Retry",
+  "no_books_found": "No books available",
+  "search": "Search",
+  "search_books": "Search for books",
+  "see_more": "See more",
+  "see_less": "See less"
 }
