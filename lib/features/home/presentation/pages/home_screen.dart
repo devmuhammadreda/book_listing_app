@@ -148,6 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           book: books[index],
                           isExpanded: _expandedIndex == index,
                           onToggle: () => _toggleExpansion(index),
+                          heroTag: 'book_item_${books[index].id}',
                         );
                       } else if (isLoadingMore && index == books.length) {
                         return Padding(

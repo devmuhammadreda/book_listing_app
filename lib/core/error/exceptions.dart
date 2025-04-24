@@ -16,3 +16,11 @@ class CacheException implements Exception {
   CacheException({required this.message});
 }
 
+class StorageException implements Exception {
+  final String message;
+
+  StorageException(this.message);
+
+  @override
+  String toString() => 'StorageException: $message';
+}

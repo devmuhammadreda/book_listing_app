@@ -14,7 +14,7 @@ class HomeCubit extends Cubit<HomeState> {
   bool _hasMorePages = true;
   bool _isLoading = false;
   String? _currentSearch;
-  
+
   final List<ResultsEntity> _allBooks = [];
 
   Future<void> loadBooks({
@@ -26,21 +26,26 @@ class HomeCubit extends Cubit<HomeState> {
       return;
     }
 
-    if (resetList || page == 1 || search != _currentSearch) {
+    bool isSearchChanged = search != _currentSearch && search != null;
+
+    if (resetList || isSearchChanged) {
       _currentPage = 1;
       _hasMorePages = true;
       _allBooks.clear();
-      _currentSearch = search;
       emit(BooksLoading());
     } else {
       emit(BooksLoadingMore(books: _allBooks));
+    }
+
+    if (search != null) {
+      _currentSearch = search;
     }
 
     _isLoading = true;
 
     final params = GetAllBooksParams(
       page: page ?? _currentPage,
-      search: search ?? _currentSearch,
+      search: _currentSearch,
     );
 
     final result = await getAllBooksUseCase.call(params);
@@ -93,10 +98,15 @@ class HomeCubit extends Cubit<HomeState> {
   }
 
   Future<void> searchBooks(String query) async {
-    await loadBooks(search: query, resetList: true);
+    if (query.isEmpty) {
+      await clearFilters();
+    } else {
+      await loadBooks(search: query, resetList: true);
+    }
   }
 
   Future<void> clearFilters() async {
-    await loadBooks(search: null, resetList: true);
+    _currentSearch = null;
+    await loadBooks(resetList: true);
   }
 }
