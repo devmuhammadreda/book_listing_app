@@ -71,7 +71,7 @@ GET /books?search=harry
 
 1. Clone this repo:
    ```bash
-   git clone <(https://github.com/devmuhammadreda/book_listing_app)>
+   git clone https://github.com/devmuhammadreda/book_listing_app
    cd flutter_book_listing_app
    ```
 
@@ -109,5 +109,5 @@ GET /books?search=harry
 
 ## 📧 Submission
 
-- GitHub repo: [https://github.com/devmuhammadreda/book_listing_app]
+- GitHub repo: https://github.com/devmuhammadreda/book_listing_app
 - devmuhammadreda@gmail.com
