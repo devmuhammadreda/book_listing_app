@@ -58,12 +58,12 @@ GET /books?search=harry
 ---
 
 ## 📹 Demo (Video)
-🎥 [Watch Demo]()
+🎥 [Watch Demo](https://drive.google.com/file/d/1tBSOd83_5yO7gAW3Rh0Pv4TtoB0FMu1E/view?usp=drive_link)
 
 ---
 
 ## 📦 Demo (APK)
-📱 [Download APK]()
+📱 [Download APK](https://drive.google.com/file/d/1jOOqk8d0rA6Fb1Xd6JwsIs1x7gbE8nSb/view?usp=drive_link)
 
 ---
 
